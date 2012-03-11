@@ -1,0 +1,48 @@
+fully dynamically typed
+	- assume programmer is the best
+	- static only do part of the job at compile time => run time error checking (like array index or division by 0). More consistent
+
+Apply as many static analysis as possible:
+	- soft typing
+	- prove error in the program
+
+Design facilitates tool support:
+	- Profiler
+	- Debugger
+	- syntax and semantic comprehension by the editor
+
+Object Oriented is for GUI and nothing else
+
+Need both imperative and functionnal
+
+A good comment is a comment not writen
+
+An OS is writen in C not in this language
+
+Should be designed for speed, tradeof with dynamic typing
+
+A language is designed for programmers, compilers and static analyzer, in no particular order
+
+Scala compiler is slow, very slow... too slow
+
+facultative parenthesis (like scala) are evil
+
+again, programmer is the best, do not try to force it to use some things, like layout (python) ...
+
+whitespace as a syntax element is a bad idea
+
+people don't like lisp parentheses. Don't know why, but worth keeping in mind if you want the language to be popular.
+
+However, some people don't like language without lisp parentheses ... trade-off trade-off ...
+
+JSON is better than XML and it would be nice to be somehow corresponding to the basic types of the language
+
+Native support is often as good as feel-like-native library support: REGEXP and maybe CFG
+
+Non determinism
+
+Relation synthetized to data structure (see paper rinard)
+
+choose(x => s + 3 == 2) like construct in scala
+
+
