@@ -1,0 +1,52 @@
+literal :=
+    int
+  | rat
+  | char
+  | string
+  | fun
+  | object
+  | array
+  | regex
+  | unit
+
+
+unit :=
+    ()
+
+fun :=
+    vardecl "=>" expr
+
+object :=
+    "{" (id "=" expr)? ("," id "=" expr)* "}"
+    
+array :=
+    "[" exprlist "]"
+
+exprlist :=
+    (expr)? ("," expr)*
+
+expr :=
+    expr ";" expr
+  | expr binop expr
+  | unaryop expr
+  | expr "(" exprlist ")"
+  | quantid
+  | quantid "=" expr
+  | ""
+
+quantid :=
+    id
+  | expr "." quantid
+    
+binop :=
+    "+"
+  | "*"
+  | "-"
+  | "/"
+  | "%"
+  | "&&"
+  | "||"
+
+unaryop :=
+    "-"
+  | "!"
