@@ -11,13 +11,15 @@ Design facilitates tool support:
 	- Debugger
 	- syntax and semantic comprehension by the editor
 
-Object Oriented is for GUI and nothing else
+Object Oriented is bad
+
+However OO seems to be useful in some cases, in particular for GUIs
 
 Need both imperative and functionnal
 
-A good comment is a comment not writen
+A good comment is a comment not writen, comments should only be used to explain the why, not the how and (probably) not the what
 
-An OS is writen in C not in this language
+An OS is writen in C, not in this language
 
 Should be designed for speed, tradeof with dynamic typing
 
@@ -27,22 +29,26 @@ Scala compiler is slow, very slow... too slow
 
 facultative parenthesis (like scala) are evil
 
-again, programmer is the best, do not try to force it to use some things, like layout (python) ...
+again, the programmer knows the best, do not try to force it to use some things, like layout (python) ...
 
 whitespace as a syntax element is a bad idea
 
 people don't like lisp parentheses. Don't know why, but worth keeping in mind if you want the language to be popular.
 
-However, some people don't like language without lisp parentheses ... trade-off trade-off ...
+However, some people don't like language without lisp parentheses...
 
 JSON is better than XML and it would be nice to be somehow corresponding to the basic types of the language
 
-Native support is often as good as feel-like-native library support: REGEXP and maybe CFG
+Native support is often as good as feel-like-native library support: REGEXP and maybe context free grammar
 
 Non determinism
 
 Relation synthetized to data structure (see paper rinard)
 
-choose(x => s + 3 == 2) like construct in scala
+A type should be defined by the operations that can be applied on it, not by the time complexity of its operation:
+	- We should not have both an array and a linkedlist, they have the same abstract interface which is the concept of a sequence
+	- Even a sequence could simply be seen as a map with keys being integer, but then you might lost the conecpt of size and continuity of the data
+
+choose(x => s + 3 == 2) like construct in scala (should be called epsilon actually)
 
 
