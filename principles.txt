@@ -49,6 +49,9 @@ A type should be defined by the operations that can be applied on it, not by the
 	- We should not have both an array and a linkedlist, they have the same abstract interface which is the concept of a sequence
 	- Even a sequence could simply be seen as a map with keys being integer, but then you might lost the conecpt of size and continuity of the data
 
+speaking of abstraction, int should be a mathematical integer, we should have rational number, infinite precision etc. Maybe provide
+bitvector and float type as well.
+
 choose(x => s + 3 == 2) like construct in scala (should be called epsilon actually)
 
 everything is an expression sounds like an elegant concept
