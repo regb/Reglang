@@ -51,4 +51,4 @@ A type should be defined by the operations that can be applied on it, not by the
 
 choose(x => s + 3 == 2) like construct in scala (should be called epsilon actually)
 
-
+everything is an expression sounds like an elegant concept
