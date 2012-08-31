@@ -55,3 +55,11 @@ bitvector and float type as well.
 choose(x => s + 3 == 2) like construct in scala (should be called epsilon actually)
 
 everything is an expression sounds like an elegant concept
+
+Focus on pure abstract data (unbounded integers, real instead of bitvectors,
+floating point). Also focus on data structure without knowing complexity of
+operations (only notion of sequence(order)/set/map). The programmer should
+NEVER try to optimize the code, the compiler will always do it. This means NO
+feature for improving optimization, only focus on correctness. Bad experience
+with all the tricks for improving scala speed.. in the end it is no better
+than writing pure C.
