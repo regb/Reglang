@@ -68,3 +68,6 @@ Macro should be in the core design. Or something like LMS. Things like choose
 could then be extended through this interface. In particular, individual
 synthesis theories could be implemented as macro or LMS, which means as some
 sort of librabray (user defined).
+
+Possibility to define sequence of operators, so that we can write expressions
+such as 1 < x < 10 which would return a boolean.
